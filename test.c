@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int main(){
     printf("lets start\n");
     // switch case
@@ -28,7 +29,10 @@ int main(){
         }
         printf("Factorial of %d is %lld\n", n, fac);
     }
-    
+    //test math functions
+    float a;
+    scanf("%f", &a);
+    printf("the value of %.1f is %.1f\n", a, sqrt(a));
 
     return 0;
 }
