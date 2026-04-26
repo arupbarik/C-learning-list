@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int main(){
     printf("lets start\n");
     // int a;
@@ -16,4 +17,3 @@ int main(){
     
     return 0;
 }
-// dont execute this code, just check the syntax and logic.
