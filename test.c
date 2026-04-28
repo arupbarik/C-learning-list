@@ -83,44 +83,122 @@ int main(){
    //  }
     
     //Electricity Billing with Slab Twist
-    int units;
-    float bill;
-    printf("enter your units consumed:\n");
-    scanf("%d",&units);
-    if (units<=100)
-    {
-      bill= units*1;
-    }
-    else if (units<=200)
-    {
-      bill= (100*1)+(units-100)*2;
-    }
-    else if (units<=300)
-    {
-      bill= (100*1)+(100*2)+(units-200)*3;
-    }
-    else if (units>300)
-    {
-      bill= (100*1)+(100*2)+(100*3)+(units-300)*5;
-    }
+   //  int units;
+   //  float bill;
+   //  printf("enter your units consumed:\n");
+   //  scanf("%d",&units);
+   //  if (units<=100)
+   //  {
+   //    bill= units*1;
+   //  }
+   //  else if (units<=200)
+   //  {
+   //    bill= (100*1)+(units-100)*2;
+   //  }
+   //  else if (units<=300)
+   //  {
+   //    bill= (100*1)+(100*2)+(units-200)*3;
+   //  }
+   //  else if (units>300)
+   //  {
+   //    bill= (100*1)+(100*2)+(100*3)+(units-300)*5;
+   //  }
     
-    if (units<=50 && units>0)
-    {
-      bill=100;
-    }
-    if (bill>500)
-    {
-      bill= bill*0.9;
-    }
-    printf("so your total bill is %.2f", bill);
-    
-    
-    
-    
-    
+   //  if (units<=50 && units>0)
+   //  {
+   //    bill=100;
+   //  }
+   //  if (bill>500)
+   //  {
+   //    bill= bill*0.9;
+   //  }
+   //  printf("so your total bill is %.2f", bill);
 
-    
+    //Game Score Analyzer
+   //  int p,o,diff;
+   //  printf("enter your player score\n");
+   //  scanf("%d", &p);
+   //  printf("enter your opponent score\n");
+   //  scanf("%d", &o);
+   //  diff= p-o;
+   //  if (diff>50)
+   //  {
+   //    printf("Win by domination");
+   //  }
+   //  else if (diff>0 && diff<=10)
+   //  {
+   //    printf("close win");
+   //  }
+   //  else if (diff>=-10 && diff<0)
+   //  {
+   //    printf("Loss but good fight");
+   //  }
+   //  else if (diff<-50)
+   //  {
+   //    printf("crushed");
+   //  }
+   //  else if (diff=0)
+   //  {
+   //    printf("Draw");
+   //  }
+   //  else
+   //  {
+   //    printf("Win but good fight");
+   //  }
 
+    // ATM Withdrawal Logic
+   //  int bal,wa;
+   //  printf("please enter your balance and witdrawl amount:\n");
+   //  scanf("%d %d",&bal,&wa);
+
+   //  if (wa%100!=0)
+   //  {
+   //    printf("PLease enter amount in multiple of 100");
+   //  }
+   //  else if (wa>bal)
+   //  {
+   //    printf("insufficient balance");
+   //  }
+    
+   //  else if ((bal-wa)<500)
+   //  {
+   //    printf("please maintain min. balance of 50 0");
+   //  }
+   //  else if (wa>10000)
+   //  {
+   //    printf("please providee extra validation");
+   //  }
+   //  else
+   //  {
+   //    printf("successful transaction. remaining balace is Rs. %d",bal-wa);
+   //  }
+    //Character Mystery Solver
+    char n;
+    printf("please enter\n");
+    scanf("%c",&n);
+    if (n>='A' && n<='Z')
+    {
+      printf("UPPERCASE");
+    }
+    else if (n>='a' && n<='z')
+    {
+      printf("lowercase");
+    }
+    else if (n>='0'&& n<='9')
+    {
+      if (n%2==0)
+      {
+         printf("even digit");
+      }
+      else
+      {
+         printf("odd digit");
+      }
+    }
+    else
+    {
+      printf("special character");
+    }
     
     return 0; 
 }
