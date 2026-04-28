@@ -2,234 +2,293 @@
 #include <math.h>
 int main(){
     printf("lets start\n");
-    int a;
-    scanf("\n%d", &a);
-    switch(a){
-        case 23:
-        printf("the value is 23");
-        break;
-        case 45:
-        printf("the value is 45");          
-        break;
-        default:
-        printf("the value is neither 23 nor 45");
-    }
+    // int a;
+    // scanf("\n%d", &a);
+    // switch(a){
+    //     case 23:
+    //     printf("the value is 23");
+    //     break;
+    //     case 45:
+    //     printf("the value is 45");          
+    //     break;
+    //     default:
+    //     printf("the value is neither 23 nor 45");
+    // }
 
     // smart traffic signal
-     int n, s, e, w;
-     printf("Enter vehicles on N S E W: ");
-     scanf("%d %d %d %d", &n, &s, &e, &w);
+   //   int n, s, e, w;
+   //   printf("Enter vehicles on N S E W: ");
+   //   scanf("%d %d %d %d", &n, &s, &e, &w);
 
-        // N checked first = highest priority on tie
-     if (n >= s && n >= e && n >= w)
-          printf("You can go North!\n");
-     else if (e >= s && e >= w)       // N already lost, so E is next priority
-          printf("You can go East!\n");
-     else if (s >= w)                 // N and E lost, S vs W
-          printf("You can go South!\n");
-     else
-          printf("You can go West!\n");
+   //      // N checked first = highest priority on tie
+   //   if (n >= s && n >= e && n >= w)
+   //        printf("You can go North!\n");
+   //   else if (e >= s && e >= w)       // N already lost, so E is next priority
+   //        printf("You can go East!\n");
+   //   else if (s >= w)                 // N and E lost, S vs W
+   //        printf("You can go South!\n");
+   //   else
+   //        printf("You can go West!\n");
 
     //Password Strength Checker
-    int pwd;
-    printf("enter your password:");
-    scanf("%d",&pwd);
-    if (pwd%7==0)
-    {
-      printf("Your password is Weak!!");
-    }
-    else if (pwd%5==0 && pwd%3==0)
-    {
-      printf("Your password is Moderate!!");
-    }
-    else if (pwd%11==0 && pwd%2!=0)
-    {
-      printf("Your password is Strong!!");
-    }
-    else{
-      printf("Your password is Invalid!!");
-    }
+   //  int pwd;
+   //  printf("enter your password:");
+   //  scanf("%d",&pwd);
+   //  if (pwd%7==0)
+   //  {
+   //    printf("Your password is Weak!!");
+   //  }
+   //  else if (pwd%5==0 && pwd%3==0)
+   //  {
+   //    printf("Your password is Moderate!!");
+   //  }
+   //  else if (pwd%11==0 && pwd%2!=0)
+   //  {
+   //    printf("Your password is Strong!!");
+   //  }
+   //  else{
+   //    printf("Your password is Invalid!!");
+   //  }
 
     //Triangle Intelligence System
-    int a,b,c;
-    printf("Enter your angles here:\n");
-    scanf("%d %d %d",&a,&b,&c);
-    int sum=a+b+c;
-    if (sum==180 && a > 0 && b > 0 && c > 0 )
-    {
-      if (a==90 || b==90 || c==90)
-      {
-         printf("it is a right angle triangle");
-      }
-      else if (a<90 && b<90 && c<90)
-      {
-         printf("it is an acute angle triangle");
-      }
-      else
-      {
-         printf("it is an obtuse angle triangle");
-      } 
-    }
-    else
-    {
-      if (a <= 0 || b <= 0 || c <= 0)
-      {
-         printf("Invalid: angles must be positive\n");
-      }
-      else
-      {
-         printf("Invalid: sum is not 180\n");
-      }
-    }
+   //  int a,b,c;
+   //  printf("Enter your angles here:\n");
+   //  scanf("%d %d %d",&a,&b,&c);
+   //  int sum=a+b+c;
+   //  if (sum==180 && a > 0 && b > 0 && c > 0 )
+   //  {
+   //    if (a==90 || b==90 || c==90)
+   //    {
+   //       printf("it is a right angle triangle");
+   //    }
+   //    else if (a<90 && b<90 && c<90)
+   //    {
+   //       printf("it is an acute angle triangle");
+   //    }
+   //    else
+   //    {
+   //       printf("it is an obtuse angle triangle");
+   //    } 
+   //  }
+   //  else
+   //  {
+   //    if (a <= 0 || b <= 0 || c <= 0)
+   //    {
+   //       printf("Invalid: angles must be positive\n");
+   //    }
+   //    else
+   //    {
+   //       printf("Invalid: sum is not 180\n");
+   //    }
+   //  }
     
     //Electricity Billing with Slab Twist
-    int units;
-    float bill;
-    printf("enter your units consumed:\n");
-    scanf("%d",&units);
-    if (units<=100)
-    {
-      bill= units*1;
-    }
-    else if (units<=200)
-    {
-      bill= (100*1)+(units-100)*2;
-    }
-    else if (units<=300)
-    {
-      bill= (100*1)+(100*2)+(units-200)*3;
-    }
-    else if (units>300)
-    {
-      bill= (100*1)+(100*2)+(100*3)+(units-300)*5;
-    }
+   //  int units;
+   //  float bill;
+   //  printf("enter your units consumed:\n");
+   //  scanf("%d",&units);
+   //  if (units<=100)
+   //  {
+   //    bill= units*1;
+   //  }
+   //  else if (units<=200)
+   //  {
+   //    bill= (100*1)+(units-100)*2;
+   //  }
+   //  else if (units<=300)
+   //  {
+   //    bill= (100*1)+(100*2)+(units-200)*3;
+   //  }
+   //  else if (units>300)
+   //  {
+   //    bill= (100*1)+(100*2)+(100*3)+(units-300)*5;
+   //  }
     
-    if (units<=50 && units>0)
-    {
-      bill=100;
-    }
-    if (bill>500)
-    {
-      bill= bill*0.9;
-    }
-    printf("so your total bill is %.2f", bill);
+   //  if (units<=50 && units>0)
+   //  {
+   //    bill=100;
+   //  }
+   //  if (bill>500)
+   //  {
+   //    bill= bill*0.9;
+   //  }
+   //  printf("so your total bill is %.2f", bill);
 
     //Game Score Analyzer
-    int p,o,diff;
-    printf("enter your player score\n");
-    scanf("%d", &p);
-    printf("enter your opponent score\n");
-    scanf("%d", &o);
-    diff= p-o;
-    if (diff>50)
-    {
-      printf("Win by domination");
-    }
-    else if (diff>0 && diff<=10)
-    {
-      printf("close win");
-    }
-    else if (diff>=-10 && diff<0)
-    {
-      printf("Loss but good fight");
-    }
-    else if (diff<-50)
-    {
-      printf("crushed");
-    }
-    else if (diff=0)
-    {
-      printf("Draw");
-    }
-    else
-    {
-      printf("Win but good fight");
-    }
+   //  int p,o,diff;
+   //  printf("enter your player score\n");
+   //  scanf("%d", &p);
+   //  printf("enter your opponent score\n");
+   //  scanf("%d", &o);
+   //  diff= p-o;
+   //  if (diff>50)
+   //  {
+   //    printf("Win by domination");
+   //  }
+   //  else if (diff>0 && diff<=10)
+   //  {
+   //    printf("close win");
+   //  }
+   //  else if (diff>=-10 && diff<0)
+   //  {
+   //    printf("Loss but good fight");
+   //  }
+   //  else if (diff<-50)
+   //  {
+   //    printf("crushed");
+   //  }
+   //  else if (diff=0)
+   //  {
+   //    printf("Draw");
+   //  }
+   //  else
+   //  {
+   //    printf("Win but good fight");
+   //  }
 
     // ATM Withdrawal Logic
-    int bal,wa;
-    printf("please enter your balance and witdrawl amount:\n");
-    scanf("%d %d",&bal,&wa);
+   //  int bal,wa;
+   //  printf("please enter your balance and witdrawl amount:\n");
+   //  scanf("%d %d",&bal,&wa);
 
-    if (wa%100!=0)
-    {
-      printf("PLease enter amount in multiple of 100");
-    }
-    else if (wa>bal)
-    {
-      printf("insufficient balance");
-    }
+   //  if (wa%100!=0)
+   //  {
+   //    printf("PLease enter amount in multiple of 100");
+   //  }
+   //  else if (wa>bal)
+   //  {
+   //    printf("insufficient balance");
+   //  }
     
-    else if ((bal-wa)<500)
-    {
-      printf("please maintain min. balance of 50 0");
-    }
-    else if (wa>10000)
-    {
-      printf("please providee extra validation");
-    }
-    else
-    {
-      printf("successful transaction. remaining balace is Rs. %d",bal-wa);
-    }
+   //  else if ((bal-wa)<500)
+   //  {
+   //    printf("please maintain min. balance of 50 0");
+   //  }
+   //  else if (wa>10000)
+   //  {
+   //    printf("please providee extra validation");
+   //  }
+   //  else
+   //  {
+   //    printf("successful transaction. remaining balace is Rs. %d",bal-wa);
+   //  }
 
     //Character Mystery Solver
-    char n;
-    printf("please enter\n");
-    scanf("%c",&n);
-    if (n>='A' && n<='Z')
-    {
-      printf("UPPERCASE");
-    }
-    else if (n>='a' && n<='z')
-    {
-      printf("lowercase");
-    }
-    else if (n>='0'&& n<='9')
-    {
-      if (n%2==0)
-      {
-         printf("even digit");
-      }
-      else
-      {
-         printf("odd digit");
-      }
-    }
-    else
-    {
-      printf("special character");
-    }
+   //  char n;
+   //  printf("please enter\n");
+   //  scanf("%c",&n);
+   //  if (n>='A' && n<='Z')
+   //  {
+   //    printf("UPPERCASE");
+   //  }
+   //  else if (n>='a' && n<='z')
+   //  {
+   //    printf("lowercase");
+   //  }
+   //  else if (n>='0'&& n<='9')
+   //  {
+   //    if (n%2==0)
+   //    {
+   //       printf("even digit");
+   //    }
+   //    else
+   //    {
+   //       printf("odd digit");
+   //    }
+   //  }
+   //  else
+   //  {
+   //    printf("special character");
+   //  }
 
     //Switch-Based Mini Calculator
-    int a,b;
-    char op;
-    printf("please enter two numbers:\n");
-    scanf("%d %c %d", &a, &op,&b);
-    switch (op)
-    {
-    case '+':
-      printf("sum is %d", a+b);
-      break;
-    case '-':
-      printf("substration is %d", a-b);
-      break;
-    case '*':
-      printf("multiplication is %d", a*b);
-      break;
-    case '/':
-      if (b==0)
-      {
-         printf("It cant be executed");
-      }
-      else
-      {
-         printf("divition is %d", a/b);
-      }
-      break;
-    default:
-    printf("unknown operation");
-      break;
-    }
+   //  int a,b;
+   //  char op;
+   //  printf("please enter two numbers:\n");
+   //  scanf("%d %c %d", &a, &op,&b);
+   //  switch (op)
+   //  {
+   //  case '+':
+   //    printf("sum is %d", a+b);
+   //    break;
+   //  case '-':
+   //    printf("substration is %d", a-b);
+   //    break;
+   //  case '*':
+   //    printf("multiplication is %d", a*b);
+   //    break;
+   //  case '/':
+   //    if (b==0)
+   //    {
+   //       printf("It cant be executed");
+   //    }
+   //    else
+   //    {
+   //       printf("divition is %d", a/b);
+   //    }
+   //    break;
+   //  default:
+   //  printf("unknown operation");
+   //    break;
+   //  }
+
+    //Temperature Advisory System
+   // int temp;
+   // printf("please enter temperatue\n");
+   // scanf("%d",&temp);
+   // if (temp<0)
+   // {
+   //    printf("dead frezzing!!");
+   // }
+   // else if (temp>=0 && temp<=15)
+   // {
+   //    printf("Cold!!");
+   // }
+   // else if (temp>=16 && temp<=30)
+   // {
+   //    printf("comfortable!!");
+   // }
+   // else if (temp>=31 && temp<=45)
+   // {
+   //    if (temp>40)
+   //    {
+   //       printf("It's Hot but stay hydrated!!");
+   //    }
+   //    else
+   //    {
+   //       printf("Hot!!");
+   //    }
+   // }
+   // else
+   // {
+   //    printf("Extreme Danger");
+   // }
+
+    // Voting Eligibility System
+   //  int age, citizen;
+   //  printf("enter your age and citizenship\n");
+   //  scanf("%d %d",&age,&citizen);
+   //  if (age<18 && citizen==0)
+   //  {
+   //    printf("Not eligible due to both");
+   //  }
+   //  else if (age>=18 && citizen==0)
+   //  {
+   //    printf("Not eligible due to citizenship");
+   //  }
+   //  else if (age<18 && citizen==1)
+   //  {
+   //    printf("Not eligible due to age");
+   //  }
+   //  else
+   //  {
+   //    printf("Eligible");
+   //  }
+    
+    //Number Pattern Decision Maker
+    int num;
+    printf("enter your number\n");
+    scanf("%d %d",&num);
+
     return 0; 
 }
