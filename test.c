@@ -286,9 +286,48 @@ int main(){
    //  }
     
     //Number Pattern Decision Maker
-    int num;
-    printf("enter your number\n");
-    scanf("%d %d",&num);
+    // int num;
+    // printf("enter your number\n");
+    // scanf("%d",&num);
+    // if (num%2==0 && num%3==0)
+    // {
+    //     printf("FizzBuzz\n");
+    // }
+    // else if (num%2==0)
+    // {
+    //     printf("Fizz\n");
+    // }
+    // else if (num%3==0)
+    // {
+    //     printf("Buzz\n");
+    // }
+    // else
+    // {
+    //     printf("the number is %d\n", num);
+    // }
+    
+    //Scholarship Eligibility
+    // int marks;
+    // float income;
+    // printf("enter your marks(0-100) and family income\n");
+    // scanf("%d %f", &marks,&income);
+    // if (marks>100)
+    // {
+    //     printf("please enter valid input in marks");
+    // }
+    // else if (marks>=90 && income<200000)
+    // {
+    //     printf("Full scholarship");
+    // }
+    // else if (marks>=75 && income<500000)
+    // {
+    //     printf("Partial scholarship");
+    // }
+    // else
+    // {
+    //     printf("No scholarship");
+    // }
 
+    //
     return 0; 
 }
