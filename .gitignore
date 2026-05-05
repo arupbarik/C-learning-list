@@ -1,6 +1,8 @@
+#files
 *.exe
 *.json
 *.log
 *.out
+.env
 #ide folder
 .vscode/   
