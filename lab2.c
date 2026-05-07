@@ -82,6 +82,21 @@ int main(){
     // }
 
     //q e
+    // int dnum,count=0;
+    // printf("Enter the number:\n");
+    // scanf("%d",&dnum);
+    // int temp=dnum;
+    // while (temp!=0)
+    // {
+    //     temp= temp/10;
+    //     count++;
+    // }
+    // printf("The digits are: %d\n",count);
+
+    //q f
+    
+    
+    
 
     
     
