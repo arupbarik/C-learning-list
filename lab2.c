@@ -28,70 +28,70 @@ int main(){
     //      p.​ Write a program in C to Convert decimal to binary using loop.
 
     //q a.
-    // int fact,m=1,a=1;
-    // printf("Enter the value\n");
-    // scanf("%d",&fact);
-    // for (int i = 0; i < fact; i++)
-    // {
-    //     a=a*m;
-    //     m++;
-    // }
-    // printf("the factorial is %d\n",a);
+    int fact,m=1,a=1;
+    printf("Enter the value\n");
+    scanf("%d",&fact);
+    for (int i = 0; i < fact; i++)
+    {
+        a=a*m;
+        m++;
+    }
+    printf("the factorial is %d\n",a);
 
     //q b
-    // int x,y,l=1;
-    // printf("Enter two numbers:\n");
-    // scanf("%d %d", &x,&y);
-    // for (int i1 = 0; i1 < y; i1++)
-    // {
-    //     l=l*x;
-    // }
-    // printf("here is the result:%d\n",l);
+    int x,y,l=1;
+    printf("Enter two numbers:\n");
+    scanf("%d %d", &x,&y);
+    for (int i1 = 0; i1 < y; i1++)
+    {
+        l=l*x;
+    }
+    printf("here is the result:%d\n",l);
 
     //q c
-    // int num;
-    // printf("enter the range from 1 to N:\n");
-    // scanf("%d",&num);
-    // if (num>0)
-    // {
-    //     for (int i2 = 1; i2 <= num; i2++)
-    // {
-    //     if (i2%2==0)
-    //     {
-    //         printf("even:%d\n",i2);
-    //     }
-    //     else
-    //     {
-    //         printf("odd:%d\n",i2);
-    //     }
-    // }
-    // }
-    // else
-    // {
-    //     printf("invalid input\n");
-    // }
+    int num;
+    printf("enter the range from 1 to N:\n");
+    scanf("%d",&num);
+    if (num>0)
+    {
+        for (int i2 = 1; i2 <= num; i2++)
+    {
+        if (i2%2==0)
+        {
+            printf("even:%d\n",i2);
+        }
+        else
+        {
+            printf("odd:%d\n",i2);
+        }
+    }
+    }
+    else
+    {
+        printf("invalid input\n");
+    }
     
     //q d
-    // int mul,v;
-    // printf("desire number table:\n");
-    // scanf("%d",&mul);
-    // for (int i3 = 1; i3 <= 10; i3++)
-    // {
-    //     v=mul*i3;
-    //     printf("%d * %d = %d\n",mul,i3,v);
-    // }
+    int mul,v;
+    printf("desire number table:\n");
+    scanf("%d",&mul);
+    for (int i3 = 1; i3 <= 10; i3++)
+    {
+        v=mul*i3;
+        printf("%d * %d = %d\n",mul,i3,v);
+    }
 
     //q e
-    // int dnum,count=0;
-    // printf("Enter the number:\n");
-    // scanf("%d",&dnum);
-    // int temp=dnum;
-    // while (temp!=0)
-    // {
-    //     temp= temp/10;
-    //     count++;
-    // }
-    // printf("The digits are: %d\n",count);
+    int dnum,count=0;
+    printf("Enter the number:\n");
+    scanf("%d",&dnum);
+    int temp=dnum;
+    while (temp!=0)
+    {
+        temp= temp/10;
+        count++;
+    }
+    printf("The digits are: %d\n",count);
 
     //q f
     
