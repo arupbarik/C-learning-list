@@ -12,19 +12,19 @@ int main(){
     //      h.​ Write a program in C to check whether a number is palindrome or not.
     //      i.​ Write a program in C to determine whether a number is prime or not.
     //      j.​ Write a program in C to Implement menu-driven calculator using infinite loop and
-    //      s     witch case
+    //         switch case.
     //      k.​ Write a C program to find HCF (GCD) of two numbers.
     //      l.​ Write a C program to find LCM of two numbers.
     //      m.​ Write a program to read N positive integer numbers; if any input is zero, program
-    //      should take the input again but if any input is negative loop body should be
-    //      terminated.
+    //         should take the input again but if any input is negative loop body should be
+    //         terminated.
     //      n.​ Write a program to Keep taking input and stop when sum exceeds 100.
     //      o.​ Write a program in C to Find digital root of a number.The digital root of a number is
-    //      the single-digit value obtained by repeatedly adding the digits of the number until
-    //      only one digit remains. Example :Number = 456
-    //      i.​ 4 + 5 + 6 = 15
-    //      ii.​ 1 + 5 = 6
-    //      iii.​ Digital root = 6
+    //         the single-digit value obtained by repeatedly adding the digits of the number until
+    //         only one digit remains. Example :Number = 456
+    //         i.​ 4 + 5 + 6 = 15
+    //         ii.​ 1 + 5 = 6
+    //         iii.​ Digital root = 6
     //      p.​ Write a program in C to Convert decimal to binary using loop.
 
     //q a.
@@ -94,11 +94,134 @@ int main(){
     printf("The digits are: %d\n",count);
 
     //q f
+    int numd;
+    printf("Enter the number:\n");
+    scanf("%d",&numd);
+    int subs=numd;
+    int product=1;
+    while (subs!=0)
+    {
+        product*=(subs%10);
+        subs/=10;
+    }
+    printf("%d\n",product);
     
-    
-    
+    //q g+h
+    int rnum,rev=0;
+    printf("Enter number:\n");
+    scanf("%d",&rnum);
+    if (rnum < 0) {
+        printf("Negative numbers are not palindromes\n");
+    } 
+    else {
+    int srev=rnum;
+    while (srev!=0)
+    {
+        rev=rev*10;
+        rev=rev+(srev%10);
+        srev=srev/10;
+    }
+    printf("%d\n",rev);
+    if (rev==rnum)
+    {
+        printf("it is palindrome\n");
+    }
+    else
+    {
+        printf("it is not palindrome\n");
+    }
+    }
 
-    
-    
+    //q i
+    int inp;
+    printf("Enter whatever:\n");
+    scanf("%d", &inp);
+
+    if (inp < 2) {
+        printf("Invalid input\n");
+    } 
+    else {
+        int isPrime = 1;  // assume prime first
+
+        for (int k = 2; k * k <= inp; k++) {  // start at 2, go till √inp
+            if (inp % k == 0) {
+                isPrime = 0;  // found a divisor → not prime
+                break;        // no need to check further
+            }
+            // NO else here! keep checking other divisors
+        }
+
+        // conclude AFTER the loop
+        if (isPrime)
+            printf("It is a prime number\n");
+        else
+            printf("It is not a prime number\n");
+    }
+
+    //q j
+    int op;
+    float fir, sec;
+
+    printf("please select from the given list\n");
+    while (1 < 2) {
+        printf("1. Addition 2. Substration 3. Multiplication 4. Divition 5. exit\n");
+        scanf("%d", &op);
+
+        if (op == 5) {
+            printf("chalo ghar\n");
+            break;
+        } else {
+            printf("Enter the digits\n");
+            scanf("%f %f", &fir, &sec);
+
+            switch (op) {
+                case 1:
+                    printf("%.2f + %.2f = %.2f\n", fir, sec, fir + sec);
+                    break;
+                case 2:
+                    printf("%.2f - %.2f = %.2f\n", fir, sec, fir - sec);
+                    break;
+                case 3:
+                    printf("%.2f * %.2f = %.2f\n", fir, sec, fir * sec);
+                    break;
+                case 4:
+                    if (sec == 0) {
+                        printf("not possible");
+                    } else {
+                        printf("%.2f / %.2f = %.2f\n", fir, sec, fir / sec);
+                        break;
+                    }
+                default:
+                    printf("Andhe menu dekhle\n");
+                    break;
+            }
+        }
+    }
+    //q k+l
+    int img,img2,hcf=1,k1=2;
+    printf("Enter the number\n");
+    scanf("%d %d",&img,&img2);
+    int div=img,div2=img2; 
+    while (k1<=div || k1<=div2)
+    {
+        if (div%k1==0 && div2%k1==0)
+        {
+            div=div/k1;
+            div2=div2/k1;
+            hcf*=k1;
+        }
+        else
+        {
+            k1++;
+        }
+        
+        
+    }
+    int lcm=(img*img2)/hcf;
+    printf("%d\n",hcf);
+    printf("%d\n",lcm);
+
+    //q m
+
 
 }
