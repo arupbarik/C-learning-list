@@ -222,6 +222,24 @@ int main(){
     printf("%d\n",lcm);
 
     //q m
+    int pnum, in;
+    printf("how many numbers u want to store\n");
+    scanf("%d", &in);
+    for (int k = 1; k <= in; k++) {
+        printf("Enter value\n");
+        scanf("%d", &pnum);
 
+        if (pnum < 0) {
+            break;
+        } 
+        else if (pnum == 0) {
+            printf("enter the integer again!!\n");
+            k--;
+        } 
+        else {
+            printf("your input is:\n");
+            printf("%d\n", pnum);
+        }
+    }
 
 }
