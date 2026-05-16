@@ -242,4 +242,15 @@ int main(){
         }
     }
 
+    //q n
+     int pl=0,number;
+    while (pl<100)
+    {
+        printf("Enter the the number\n");
+        scanf("%d",&number);
+        pl+=number;
+    }
+    printf("Complete!!! \n sum = %d\n",pl);
+
+    //q o
 }
