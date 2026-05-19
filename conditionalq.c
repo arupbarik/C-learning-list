@@ -18,5 +18,21 @@ int main(){
     }
 
     //q2 Read two numbers and print the larger one.
-    
+    int b,c;
+    printf("enter the numbers\n");
+    scanf("%d %d",&b,&c);
+    if (c>b)
+    {
+        printf("c is geater\n%d\n",c);
+    }
+    else if (c==b)
+    {
+        printf("dont enter equal num\n");
+    }
+    else
+    {
+        printf("b is geater\n%d\n",b);
+    }
+
+    //q 3
 }
