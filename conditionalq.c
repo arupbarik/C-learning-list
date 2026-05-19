@@ -34,5 +34,18 @@ int main(){
         printf("b is geater\n%d\n",b);
     }
 
-    //q 3
+    //q 3 Read a year and check if it is a leap year.
+    int leap;
+    printf("Enter year\n");
+    scanf("%d",&leap);
+    if (leap%4==0 && leap%100!=0 && leap%400==0)
+    {
+        printf("it is a leap year\n");
+    }
+    else
+    {
+        printf("it is a leap year\n");
+    }
+    
+    
 }
