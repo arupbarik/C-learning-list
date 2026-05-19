@@ -46,6 +46,38 @@ int main(){
     {
         printf("it is a leap year\n");
     }
+
+    //q4 Read a character and print whether it is a vowel or consonant.
+    char vc;
+    printf("Enter character\n");
+    scanf("%c",&vc);
+    if (vc=='a' || vc=='e' || vc=='i' || vc=='u' || vc=='o')
+    {
+        printf("it is a vowel\n");
+    }
+    else if (vc=='A' || vc=='E' || vc=='I' || vc=='U' || vc=='O')
+    {
+        printf("it is a Vowel\n");
+    }
     
-    
+    else
+    {
+        printf("it is consonent\n");
+    }
+
+    //q5 Read three numbers and print them in ascending order without using an array.
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    if (x > y) {
+        int t = x; x = y; y = t;
+    }
+    if (x > z) {
+        int t = x; x = z; z = t;
+    }    
+    if (y > z) {
+        int t = y; y = z; z = t;
+    }
+    printf("%d %d %d\n", x, y, z);
+
+    //q6 
 }
