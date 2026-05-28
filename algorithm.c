@@ -30,6 +30,31 @@ int binarysearch(int arr[], int n,int target){
     return -1;
     
 }
+void bubblesort(int arr[],int n){
+    for (int i = 0; i < n-1; i++)
+    {
+        int swap=0; //flag
+        for (int j = 0; j < n-i-1; j++)
+        {
+            if (arr[j]>arr[j+1])
+            {
+                // Swap
+                int temp;
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+                swap=1;
+            }
+            
+        }
+        if (swap==0)
+        {
+            break;
+        }
+        
+    }
+    
+}
 int main(){
     printf("start algorithm\n");
 
@@ -57,7 +82,15 @@ int main(){
         printf("Found and the index is %d\n",final);
     }
     else {
-        printf("Not Found");
+        printf("Not Found\n");
     }
 // Bubble sort
+   int ar[10]={5,8,7,6,8,2,3,4,9,1};
+   int x=10;
+   bubblesort(ar,x);
+   for (int i = 0; i < x; i++)
+   {
+     printf("%d\n",ar[i]);
+   }
+   
 }
