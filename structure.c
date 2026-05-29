@@ -15,4 +15,11 @@ int main(){
     printf("%s\t",s1.name);
     printf("%d\t",s1.age);
     printf("%d\n",s1.class);
+    struct student s2;
+    strcpy(s2.name,"Amit");
+    s2.age=18;
+    s2.class=2;
+    printf("%s\t",s2.name);
+    printf("%d\t",s2.age);
+    printf("%d\n",s2.class);
 }
